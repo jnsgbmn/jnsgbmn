@@ -1,4 +1,4 @@
-[![MasterHead](https://64.media.tumblr.com/8541aa3ab2ec7ab0d54777bda31383ab/3ffa61c01858bb9f-a8/s640x960/de79dd5957cbd62ddb0f777092580c0c81bcb7af.gifv)](https://animayo.tumblr.com/post/621694331972206592/weathering-with-you-2019-dir-makoto-shinkai-i)
+
 <h1 align="center">Hi 👋, I'm Joan Gumban</h1>
 <h3 align="center">Inspiring Frontend Developer from Ph</h3>
 
