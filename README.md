@@ -2,13 +2,13 @@
 <h1 align="center">Hi 👋, I'm Joan Gumban</h1>
 <h3 align="center">Frontend Developer from Ph</h3>
 
-- 🔭 I’m **freelancer front end developer**
+- 🎨 I’m **freelancer front end developer**
 
 - 🌱 I’m currently learning **Front-end and Graphic design**
 
-- 👯 I’m looking to collaborate on **every project**
+- 🧿 I’m looking to collaborate on **every project**
 
-- 👨‍💻 All of my projects are available at [https://jnsgumban-portfolio-74c76.web.app/](https://jnsgumban-portfolio-74c76.web.app/)
+- 🖼️ All of my projects are available at [https://jnsgumban-portfolio-74c76.web.app/](https://jnsgumban-portfolio-74c76.web.app/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
