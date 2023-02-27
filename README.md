@@ -1,6 +1,6 @@
 
 <h1 align="center">Hi 👋, I'm Joan Gumban</h1>
-<h3 align="center">Inspiring Frontend Developer from Ph</h3>
+<h3 align="center">Frontend Developer from Ph</h3>
 
 - 🔭 I’m **freelancer front end developer**
 
