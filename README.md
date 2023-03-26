@@ -2,9 +2,9 @@
 <h1 align="center">Hi 👋, I'm Joan Gumban</h1>
 <h3 align="center">Frontend Developer from Ph</h3>
 
-- 🎨 I’m ** inspiring front end developer**
+- 🎨 I’m inspring **front end developer**
 
-- 🌱 I’m currently learning **Front-end and Graphic design**
+- 🌱 I’m currently learning **Web3**
 
 - 🧿 I’m looking to collaborate with me
 
