@@ -1,8 +1,7 @@
 
 <h1 align="center">Hi 👋, I'm Joan Gumban</h1>
-<h3 align="center">Frontend Developer from Ph</h3>
 
-- 🎨 I’m Aspiring **front end developer**
+- 🎨 A’m Aspiring **front end developer**
 
 - 🌱 I’m currently learning **Web3**
 
