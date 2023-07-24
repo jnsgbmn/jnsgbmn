@@ -5,7 +5,6 @@
 
 - 🌱 I’m currently learning **Web3**
 
-- 🧿 I’m looking to collaborate with me
 
 
 
