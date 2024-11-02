@@ -1,0 +1,67 @@
+/* Component styles */
+@tailwind components;
+
+/* Utility styles */
+@tailwind utilities;
+
+.about-content {
+  padding: 0 5px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-subtitle {
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  font-size: 14px;
+  color: #666;
+}
+
+.paragraphs {
+  margin-bottom: 20px;
+}
+
+.work-list {
+  list-style: none;
+  padding: 0;
+}
+
+.work-item {
+  margin-bottom: 20px;
+}
+
+.work-item-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.work-item-meta {
+  font-size: 14px;
+  color: #666;
+}
+
+.work-item-description {
+  margin-left: 20px;
+}
+
+.work-item-name:hover {
+  animation: underline-animation 0.5s infinite alternate;
+}
+
+@keyframes underline-animation {
+  from {
+    text-decoration: none;
+  }
+  to {
+    text-decoration: underline;
+  }
+}

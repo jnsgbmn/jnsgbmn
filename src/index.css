@@ -1,13 +1,75 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Avenir ';
-    src: url('./font/Avenir-Roman.ttf');
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
 }
+
+:before,
+:after {
+  --tw-content: "";
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+  font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 @font-face {
-    font-family: 'Allenoire Free Personal';
-    src: url('./font/Allenoire\ Font.otf');
+  font-family: S;
+  font-weight: 400;
+  src: url(/public/fonts/s.36b98525.otf);
+}
+
+@font-face {
+  font-family: N;
+  font-weight: 400;
+  src: url(/public/fonts/n.18bbe103.ttf);
+}
+
+@font-face {
+  font-family: RM;
+  src: url(/public/fonts/RMMono-Regular.ttf);
+}
+
+.font-screensaver {
+  font-family: "RM", monospace;
+}
+.font-display {
+  font-family: s;
+}
+.font-body {
+  font-family: N;
+}
+body {
+  margin: 0;
+  font-family: N, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.before\:bg-primary:before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 39 / var(--tw-bg-opacity));
 }

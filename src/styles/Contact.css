@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation for underline */
+@keyframes underline-animation {
+  from {
+    text-decoration: none;
+  }
+  to {
+    text-decoration: underline;
+  }
+}
+
+/* Contact component styles */
+#contact .font-m li a:hover {
+  animation: underline-animation 0.5s infinite alternate;
+}

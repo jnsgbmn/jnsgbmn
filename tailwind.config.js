@@ -1,15 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        'p' : ['Avenir'],
-        'h1' : ['Allenoire Free Personal', 'normal']
+        display: ["n.18bbe103e", "s.36b98525"],
+        m: ["RecklessNeue-Book", "RecklessNeue-Book"],
+      },
+      colors: {
+        turquoise: {
+          DEFAULT: "#40E0D0",
+        },
+      },
+      keyframes: {
+        "underline-animation": {
+          "0%": { textDecoration: "none" },
+          "100%": { textDecoration: "underline" },
+        },
+      },
+      animation: {
+        "underline-animation": "underline-animation 0.5s infinite alternate",
       },
     },
   },
   plugins: [],
-}
+};
