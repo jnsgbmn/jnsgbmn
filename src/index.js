@@ -1,11 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
-import "./index.css"; // Assuming you have a global stylesheet
+import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root") // Ensure your HTML file has a div with id 'root'
+  </React.StrictMode>
 );
+
+serviceWorker.unregister();
