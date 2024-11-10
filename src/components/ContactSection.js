@@ -75,7 +75,10 @@ const Contact = () => {
               <span className="underline absolute bottom-0 left-0 w-full h-1 bg-white scale-x-0"></span>
             </a>
           </li>
-          <div className="mt-9 text-center" style={{ fontSize: "10px" }}>
+          <div
+            className="mt-9 md:text-xl text-[0.1px] text-center"
+            style={{ fontSize: "10px" }}
+          >
             <p>
               &copy; {new Date().getFullYear()} Built and designed by Joan
               Gumban. All rights reserved.

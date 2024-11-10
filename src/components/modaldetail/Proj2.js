@@ -14,7 +14,9 @@ const Proj2 = () => {
   const projectDescription =
     "I’ve held NFTs for quite some time now, enjoying and learning a lot from various campaigns. Currently, I’ve expanded my network through collaborations that involve NFTs.";
   const modalImageSrc = "/assets/portfolio.png";
-  const nftImageSrc = "/assets/nft.png";
+  const nftImageSrc = "/assets/astro-portfolio.png";
+  const astroLogo = "/assets/astro.png";
+  const portfolioLink = "https://jsgbn-astro.vercel.app/";
 
   return (
     <div className="w-full h-full bg-white pb-10 mb:pb-0 project">
@@ -36,10 +38,41 @@ const Proj2 = () => {
                     <FadeInSection>
                       <p className="mt-4">NFT Advocate</p>
                     </FadeInSection>
+
                     <FadeInSection>
-                      <p className="mt-4">
-                        This project is still in development.
-                      </p>
+                      <div className="flex gap-3 h-[90px]">
+                        <div className="mt-4 rounded-md w-[60px] h-[60px] bg-white bg-opacity-100 backdrop-blur-md drop-shadow-lg">
+                          <a
+                            href={portfolioLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              className="mx-auto pt-4 w-[30px]"
+                              src={astroLogo}
+                              alt="Figma Logo"
+                            />
+                          </a>
+                        </div>
+                        <div className="mt-4 rounded-md w-[60px] h-[60px] bg-white bg-opacity-100 backdrop-blur-md drop-shadow-lg">
+                          <a target="_blank" rel="noopener noreferrer">
+                            <img
+                              className="mx-auto relative items-center pt-4 w-[30px] md:w-[30px]"
+                              src={"/assets/logo-react.svg"}
+                              alt="React"
+                            />
+                          </a>
+                        </div>
+                        <div className="mt-4 rounded-md w-[60px] h-[60px] bg-white bg-opacity-100 backdrop-blur-md drop-shadow-lg">
+                          <a target="_blank" rel="noopener noreferrer">
+                            <img
+                              className="mx-auto relative items-center pt-4 w-[30px] md:w-[30px]"
+                              src={"/assets/vercel.png"}
+                              alt="React"
+                            />
+                          </a>
+                        </div>
+                      </div>
                     </FadeInSection>
                   </div>
                 </FadeInSection>
