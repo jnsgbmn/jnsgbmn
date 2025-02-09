@@ -19,8 +19,8 @@ const About = () => {
 };
 
 const AboutInfo = () => {
-  const mapuaRef = useRef(null); // Define mapuaRef here
-  const fullstackRef = useRef(null); // Define fullstackRef here
+  const mapuaRef = useRef(null);
+  const fullstackRef = useRef(null);
 
   useEffect(() => {
     const animateUnderline = (element) => {
@@ -69,7 +69,7 @@ const AboutInfo = () => {
         <div className="ptag mt-5">
           <FadeInSection>
             <p className="mb-5">
-              I am
+              I'm&nbsp;
               <a
                 ref={fullstackRef}
                 href="https://roadmap.sh/frontend/"
@@ -77,11 +77,11 @@ const AboutInfo = () => {
                 rel="noopener noreferrer"
                 className="text-primary no-underline relative inline-block"
               >
-                Full Stack Developer
                 <span
                   className="underline-animation absolute bottom-0 left-0 w-full"
                   style={{ height: "1px", backgroundColor: "black" }}
                 ></span>
+                Full Stack Developer
               </a>{" "}
               from the Philippines and currently work at Mazer LTD, a UK private
               company that provides government services. It's like an agency
@@ -90,7 +90,7 @@ const AboutInfo = () => {
             <p className="mb-5">
               I graduated from{" "}
               <a
-                ref={mapuaRef} // Use mapuaRef here
+                ref={mapuaRef}
                 href="https://mcm.edu.ph/programs/college/college-of-computer-science-and-information/computer-science/"
                 target="_blank"
                 rel="noopener noreferrer"

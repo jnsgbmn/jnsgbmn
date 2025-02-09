@@ -76,7 +76,7 @@ const Contact = () => {
             </a>
           </li>
           <div
-            className="mt-9 md:text-xl text-[0.1px] text-center"
+            className="mt-9 md:text-xl text-[0.1px] "
             style={{ fontSize: "10px" }}
           >
             <p>

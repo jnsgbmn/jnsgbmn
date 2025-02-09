@@ -1,0 +1,35 @@
+[
+  {
+    "id": "monstera",
+    "title": "ECommerce Monstera Store Inspiration",
+    "description": "My case study prototype project in Google where I learned about entry-level jobs in user experience (UX) design.",
+    "status": "",
+    "imageSrc": "/assets/img-1.png",
+    "modalImageSrc": "/assets/mdl-1.png"
+  },
+  {
+    "id": "skindiseases",
+    "title": "Skin Disease Identification through Image Classification and Segmentation using Deep Learning Technique",
+    "description": "A cross-platform application that utilizes machine learning techniques to detect viral skin lesion diseases. The aim of this project is to reduce the cases of skin lesion diseases. For the model processing, we studied and utilized a convolutional neural network named for detecting skin cancer diseases",
+    "status": "",
+    "imageSrc": "/assets/img-4.png",
+    "modalImageSrc": "/assets/mdl-2.png"
+  },
+
+  {
+    "id": "wren",
+    "title": "Wren Laboratories",
+    "description": "I'm currently working on the 2 software development for Wren Laboratories, focusing on both patient and physician-related systems",
+    "status": "This project is still in development.",
+    "imageSrc": "/assets/img-2.png",
+    "modalImageSrc": "/assets/mdl-5.png"
+  },
+  {
+    "id": "domicilium",
+    "title": "Domicilium Service Portal",
+    "description": "A System which allows clients to buy service from Domicillium under various brands and to access and manage these services.",
+    "status": "This project is still in development.",
+    "imageSrc": "/assets/img-5.png",
+    "modalImageSrc": "/assets/mdl-4.png"
+  }
+]

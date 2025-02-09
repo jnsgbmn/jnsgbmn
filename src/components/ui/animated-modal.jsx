@@ -48,7 +48,6 @@ export const ModalTrigger = ({ children, id, className }) => {
   );
 };
 
-// Modal component that displays content when the modal is open
 export const ModalBody = ({ children, id, className }) => {
   const { open, closeModal } = useModal(id);   // Hook to handle modal opening/closing state
   const modalRef = useRef(null);
@@ -78,10 +77,10 @@ export const ModalBody = ({ children, id, className }) => {
           exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
           className="fixed inset-0 flex items-center justify-center z-50"
         >
-          <Overlay />
+
           <motion.div
             ref={modalRef}
-            className={cn("relative max-h-[90%] w-full max-w-[40%] bg-white dark:bg-neutral-950 border border-transparent dark:border-neutral-800 md:rounded-2xl flex flex-col overflow-auto", className)}
+            className={cn("relative max-h-[90%] w-full max-w-[90%] md:max-w-[40%] bg-white dark:bg-neutral-950 border border-transparent dark:border-neutral-800 rounded-2xl  md:rounded-2xl flex flex-col overflow-auto", className)}
             initial={{ opacity: 0, scale: 0.5, rotateX: 40, y: 40 }}
             animate={{ opacity: 1, scale: 1, rotateX: 0, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, rotateX: 10 }}
@@ -98,16 +97,14 @@ export const ModalBody = ({ children, id, className }) => {
   );
 };
 
-// Reusable modal content component
 export const ModalContent = ({ children, className }) => {
   return (
-    <div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
+    <div className={cn("flex flex-col ", className)}>
       {children}
     </div>
   );
 };
 
-// Reusable modal footer component
 export const ModalFooter = ({ children, className }) => {
   return (
     <div className={cn("flex justify-end p-4 bg-gray-100 dark:bg-neutral-900", className)}>
@@ -116,19 +113,17 @@ export const ModalFooter = ({ children, className }) => {
   );
 };
 
-// Overlay component
-const Overlay = ({ className }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, backdropFilter: "blur(10px)" }}
-      exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-      className={`fixed inset-0 bg-black bg-opacity-50 z-40 ${className}`}
-    />
-  );
-};
+// const Overlay = ({ className }) => {
+//   return (
+//     <motion.div
+//       initial={{ opacity: 0 }}
+//       animate={{ opacity: 1, backdropFilter: "blur(10px)" }}
+//       exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+//       className={`fixed inset-0 bg-black bg-opacity-50 z-40 ${className}`}
+//     />
+//   );
+// };
 
-// Close icon for the modal
 const CloseIcon = ({ closeModal }) => {
   return (
     <button
