@@ -173,7 +173,7 @@ const WorkExperience = () => {
               <h4 className="inline-block mr-1 font-display text-xl">
                 <a
                   ref={mazarRef}
-                  href="https://find-and-update.company-information.service.gov.uk/company/04107032"
+                  href="https://www.mazer.co.uk/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative inline-block no-underline"
@@ -189,7 +189,7 @@ const WorkExperience = () => {
             </div>
             <div className="mt-2">
               <p>As Full-Stack Developer</p>
-              <p>Working on React, Zustand, and Node.js</p>
+              <p>Working on React, Next.js, and Node.js</p>
             </div>
           </li>
         </FadeInSection>

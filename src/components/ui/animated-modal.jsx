@@ -73,21 +73,23 @@ export const ModalBody = ({ children, id, className }) => {
       {open && (
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, backdropFilter: "blur(10px)" }}
-          exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-          className="fixed inset-0 flex items-center justify-center z-50"
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 flex items-center justify-center z-50
+             backdrop-blur sm:backdrop-blur-md md:backdrop-blur-lg"
         >
+
 
           <motion.div
             ref={modalRef}
-            className={cn("relative max-h-[90%] w-full max-w-[90%] md:max-w-[40%] bg-white dark:bg-neutral-950 border border-transparent dark:border-neutral-800 rounded-2xl  md:rounded-2xl flex flex-col overflow-auto", className)}
+            className={cn("relative max-h-[90%] w-full max-w-[90%] md:max-w-[40%] rounded-2xl  md:rounded-2xl flex flex-col overflow-auto", className)}
             initial={{ opacity: 0, scale: 0.5, rotateX: 40, y: 40 }}
             animate={{ opacity: 1, scale: 1, rotateX: 0, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, rotateX: 10 }}
             transition={{ type: "spring", stiffness: 260, damping: 15 }}
           >
             <CloseIcon closeModal={closeModal} />
-            <div className="flex flex-col flex-1">
+            <div className="flex flex-col flex-1  ">
               {children}
             </div>
           </motion.div>
@@ -128,19 +130,19 @@ const CloseIcon = ({ closeModal }) => {
   return (
     <button
       onClick={closeModal}
-      className="absolute top-4 right-4 z-50 group"
+      className="fixed top-2 right-2 md:top-4 md:right-4 z-50"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="25"
+        height="25"
         viewBox="0 0 24 24"
         fill="none"
         stroke="black"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-6 w-6 group-hover:scale-125 group-hover:rotate-3 transition duration-200"
+        className="h-6 w-6 bg-transparent"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M18 6l-12 12" />
@@ -149,6 +151,10 @@ const CloseIcon = ({ closeModal }) => {
     </button>
   );
 };
+
+
+export default CloseIcon;
+
 
 // Hook to close the modal if clicking outside
 export const useOutsideClick = (ref, callback) => {

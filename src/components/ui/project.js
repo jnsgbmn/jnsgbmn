@@ -8,7 +8,7 @@ import {
 import FadeInSection from "../Fadesection";
 
 const Project = ({ project, idx }) => {
-  const modalId = `${project.id}-modal`; // Corrected template literal
+  const modalId = `${project.id}-modal`;
 
   return (
     <ModalProvider>
@@ -23,9 +23,9 @@ const Project = ({ project, idx }) => {
                   <ModalTrigger id={modalId} className="order-1 lg:order-1">
                     <div className="relative flex items-center justify-center cursor-pointer">
                       <img
-                        className="project-image cursor-pointer pb-0 md:pb-[140px] lg:mt-0 mx-auto w-full h-auto object-cover" // Ensure responsive image
+                        className="project-image cursor-pointer pb-0 md:pb-[140px] lg:mt-0 mx-auto w-full h-auto object-cover"
                         src={project.imageSrc}
-                        alt={project.title} // Added alt attribute for accessibility
+                        alt={project.title}
                       />
                     </div>
                   </ModalTrigger>
@@ -38,9 +38,19 @@ const Project = ({ project, idx }) => {
                       </div>
                       <FadeInSection>
                         <div className="font-body">
-                          <p>{project.description}</p>
+                          <p>
+                            {project.description ||
+                              "Description not available."}
+                          </p>
+                          {project.role && (
+                            <p className="mt-4">
+                              <strong>Role:</strong> {project.role}
+                            </p>
+                          )}
                           {project.status && (
-                            <p className="mt-4">{project.status}</p>
+                            <p className="mt-4">
+                              <strong>Status:</strong> {project.status}
+                            </p>
                           )}
                         </div>
                       </FadeInSection>
@@ -58,9 +68,19 @@ const Project = ({ project, idx }) => {
                       </div>
                       <FadeInSection>
                         <div className="font-body">
-                          <p>{project.description}</p>
+                          <p>
+                            {project.description ||
+                              "Description not available."}
+                          </p>
+                          {project.role && (
+                            <p className="mt-4">
+                              <strong>Role:</strong> {project.role}
+                            </p>
+                          )}
                           {project.status && (
-                            <p className="mt-4">{project.status}</p>
+                            <p className="mt-4">
+                              <strong>Status:</strong> {project.status}
+                            </p>
                           )}
                         </div>
                       </FadeInSection>
@@ -69,7 +89,9 @@ const Project = ({ project, idx }) => {
                   <ModalTrigger id={modalId} className="order-1 lg:order-2">
                     <div className="relative flex items-center justify-center cursor-pointer">
                       <img
-                        className="project-image cursor-pointer pb-0 md:pb-[140px] lg:mt-0 mx-auto w-full h-auto object-cover" // Ensure responsive image
+                        className={`project-image ${
+                          project.modalImageSrc ? "cursor-pointer" : ""
+                        } pb-0 md:pb-[140px] lg:mt-0 mx-auto w-full h-auto object-cover`}
                         src={project.imageSrc}
                         alt={project.title}
                       />
@@ -80,15 +102,17 @@ const Project = ({ project, idx }) => {
             </div>
           </div>
         </section>
-        <ModalBody id={modalId} className="overflow-y-auto max-h-[90vh]">
-          <ModalContent className="w-full h-full p-0">
-            <img
-              src={project.modalImageSrc}
-              alt="Project Details"
-              className="w-full h-auto object-cover" // Ensure the image maintains its aspect ratio
-            />
-          </ModalContent>
-        </ModalBody>
+        {project.modalImageSrc && (
+          <ModalBody id={modalId} className="overflow-y-auto max-h-[90vh]">
+            <ModalContent className="w-full h-full p-0">
+              <img
+                src={project.modalImageSrc}
+                alt="Project Details"
+                className="w-full h-auto object-cover"
+              />
+            </ModalContent>
+          </ModalBody>
+        )}
       </div>
     </ModalProvider>
   );
