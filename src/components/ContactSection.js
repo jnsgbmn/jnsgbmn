@@ -35,7 +35,7 @@ const Contact = () => {
             <a
               className="contact-link relative inline-block"
               rel="noopener noreferrer"
-              // href="/assets/Resume-Gumban.pdf"
+              href="/assets/Resume-Gumban.pdf"
               target="_blank"
             >
               Resume

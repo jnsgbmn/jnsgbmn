@@ -11,7 +11,7 @@ export function HeroSection() {
           </span>
         </h1>
         <h2 className="text-[9vw] leading-[0.9em] text-primary ml-[15vw]">
-          Full Stack Developer
+          Front end Developer
         </h2>
       </div>
     </header>

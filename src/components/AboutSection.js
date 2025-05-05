@@ -81,11 +81,11 @@ const AboutInfo = () => {
                   className="underline-animation absolute bottom-0 left-0 w-full"
                   style={{ height: "1px", backgroundColor: "black" }}
                 ></span>
-                Full Stack Developer
+                Front-End developer
               </a>{" "}
-              from the Philippines and currently work at Mazer LTD, a UK private
-              company that provides government services. It's like an agency
-              company that offers software solutions.
+              from the Philippines and recently working at Mazer LTD, a UK
+              private company that provides government services. It's like an
+              agency company that offers software solutions.
             </p>
             <p className="mb-5">
               I graduated from{" "}
