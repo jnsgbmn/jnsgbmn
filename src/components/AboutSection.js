@@ -85,7 +85,7 @@ const AboutInfo = () => {
               </a>{" "}
               from the Philippines and recently working at Mazer LTD, a UK
               private company that provides government services. It's like an
-              agency company that offers software solutions.
+              agency company that offers custom software solutions.
             </p>
             <p className="mb-5">
               I graduated from{" "}
@@ -185,10 +185,10 @@ const WorkExperience = () => {
                   ></span>
                 </a>
               </h4>
-              <p className="text-sm">— Current, United Kingdom, UK</p>
+              <p className="text-sm">— Recent, United Kingdom, UK</p>
             </div>
             <div className="mt-2">
-              <p>As Full-Stack Developer</p>
+              <p>As front end Developer </p>
               <p>Working on React, Next.js, and Node.js</p>
             </div>
           </li>
@@ -214,7 +214,7 @@ const WorkExperience = () => {
               <p className="text-sm">— 2023, Philippines, PH</p>
             </div>
             <div className="mt-2">
-              <p>Full Stack Developer</p>
+              <p>Full Stack Developer Intern</p>
               <p>Used PHP for the back-end and Laravel for the front-end</p>
             </div>
           </li>
