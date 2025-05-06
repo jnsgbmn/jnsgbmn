@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <footer className="bg-primary flex justify-center bg-black text-secondary py-16 md:pl-4">
-      <div className="w-full md:w-6/4 lg:w-5/3 xl:w-2/3 text-white md:pl-10 ml-4 md:ml-6 lg:ml-8 xl:ml-10">
+      <div className="w-full md:w-6/4 lg:w-5/3 xl:w-2/3 text-white w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <p className="font-body mb-8">Let's chat on:</p>
         <ul>
           <li className="font-display text-5xl md:text-7xl relative w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
@@ -68,7 +68,7 @@ const Contact = () => {
               className="contact-link relative inline-block"
               target="_blank"
               rel="noopener noreferrer"
-              href="mailto:jgumban@mcm.edu.ph"
+              href="mailto:hello@jsgbn.com"
             >
               Email
               <span className="underline absolute bottom-0 left-0 w-full h-1 bg-white scale-x-0"></span>

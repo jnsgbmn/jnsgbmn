@@ -6,7 +6,7 @@
         {
           "id": "monstera",
           "title": "ECommerce Monstera Store Inspiration",
-          "description": "My case study prototype project in Google where I learned about entry-level jobs in user experience (UX) design.",
+          "description": "My case study prototype project in Google where I learned about entry-level in user experience (UX) design.",
           "status": "",
           "imageSrc": "/assets/img-1.png",
           "modalImageSrc": "/assets/mdl-1.png"
@@ -14,15 +14,15 @@
         {
           "id": "skindiseases",
           "title": "Skin Disease Identification through Image Classification and Segmentation using Deep Learning",
-          "description": "The aim of this project is to reduce the cases of skin lesion diseases. For the model processing, we studied and utilized a convolutional neural network.",
-          "status": "",
+          "description": "The aim of this project is to reduce the cases of skin lesion diseases. For the model processing, we studied and utilized a convolutional neural network. This is our thesis project.",
+          "status": "This project is still in development.",
           "imageSrc": "/assets/img-4.png",
           "modalImageSrc": "/assets/mdl-2.png"
         },
         {
           "id": "wren",
           "title": "Laboratory Information System",
-          "description": "I'm currently working on a microservice-based system for Wren Laboratories, focusing on processing Covid-19 and cancer PCR test samples for both patients and physicians.",
+          "description": "working on a 2 microservice-based system for Wren Laboratories, focusing on processing Covid-19 and cancer PCR test samples for both patients and physicians.",
           "status": "This project is deployed and private.",
           "role": "Front-End Dev (Client-Side and Admin)",
           "imageSrc": "/assets/img-2.png",
