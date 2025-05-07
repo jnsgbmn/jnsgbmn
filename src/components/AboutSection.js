@@ -188,7 +188,7 @@ const WorkExperience = () => {
               <p className="text-sm">— Recent, United Kingdom, UK</p>
             </div>
             <div className="mt-2">
-              <p>As front end Developer </p>
+              <p>As Front End Developer </p>
               <p>Working on React, Next.js, and Node.js</p>
             </div>
           </li>
@@ -214,8 +214,8 @@ const WorkExperience = () => {
               <p className="text-sm">— 2023, Philippines, PH</p>
             </div>
             <div className="mt-2">
-              <p>Full Stack Developer Intern</p>
-              <p>Used PHP for the back-end and Laravel for the front-end</p>
+              <p>As Full Stack Developer Intern</p>
+              <p>Working on Php,Sql and Laravel</p>
             </div>
           </li>
         </FadeInSection>
