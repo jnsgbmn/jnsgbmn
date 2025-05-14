@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <footer className="bg-primary flex justify-center bg-black text-secondary py-16 md:pl-4">
-      <div className="w-full md:w-6/4 lg:w-5/3 xl:w-2/3 text-white w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div className="w-full  text-white w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
         <p className="font-body mb-8">Let's chat on:</p>
         <ul>
           <li className="font-display text-5xl md:text-7xl relative w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
@@ -78,10 +78,10 @@ const Contact = () => {
             className="mt-9 md:text-xl text-[0.1px] "
             style={{ fontSize: "10px" }}
           >
-            <p>
+            {/* <p>
               &copy; {new Date().getFullYear()} Built and designed by Joan
               Gumban. All rights reserved.
-            </p>
+            </p> */}
           </div>
         </ul>
       </div>

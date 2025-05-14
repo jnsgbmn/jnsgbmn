@@ -101,7 +101,7 @@ export const ModalBody = ({ children, id, className }) => {
 
 export const ModalContent = ({ children, className }) => {
   return (
-    <div className={cn("flex flex-col ", className)}>
+    <div className={cn("flex flex-col h-full ", className)}>
       {children}
     </div>
   );

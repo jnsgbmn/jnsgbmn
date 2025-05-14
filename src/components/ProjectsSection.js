@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectComponent from "./ui/project";
 import projectsData from "./content/pages.json";
+// import FadeInLeftRightSection from "./FadeInLeftRightSection";
 
 const Projects = () => {
   return (
@@ -17,9 +18,11 @@ const Projects = () => {
           </div>
 
           {/* Projects */}
-          <div className="">
+          <div className="grid gap-8 px-3 md:px-5 max-w-7xl mx-auto pt-10 pb-10">
             {section.projects.map((project) => (
-              <ProjectComponent key={project.id} project={project} />
+              <div className="bg-white shadow-2xl rounded-3xl  p-2 pt-5  ">
+                <ProjectComponent project={project} />
+              </div>
             ))}
           </div>
         </div>

@@ -81,7 +81,7 @@ const AboutInfo = () => {
                   className="underline-animation absolute bottom-0 left-0 w-full"
                   style={{ height: "1px", backgroundColor: "black" }}
                 ></span>
-                Front-End developer
+                Junior Front-End developer
               </a>{" "}
               from the Philippines and recently working at Mazer LTD, a UK
               private company that provides government services. It's like an
@@ -215,7 +215,7 @@ const WorkExperience = () => {
             </div>
             <div className="mt-2">
               <p>As Full Stack Developer Intern</p>
-              <p>Working on Php,Sql and Laravel</p>
+              <p>Working on Php, Sql and Laravel</p>
             </div>
           </li>
         </FadeInSection>

@@ -9,7 +9,8 @@
           "description": "My case study prototype project in Google where I learned about entry-level in user experience (UX) design.",
           "status": "",
           "imageSrc": "/assets/img-1.png",
-          "modalImageSrc": "/assets/mdl-1.png"
+          "modalImageSrc": "/assets/mdl-1.png",
+          "link": "https://www.figma.com/design/VIex5OJiD8TQ02DvU7DZ8Q/Monstera-Store-High-fidelity-Mockup-Prototype?node-id=0-1&t=JPppQBhROxlXY5HE-1"
         },
         {
           "id": "skindiseases",

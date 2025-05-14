@@ -15,7 +15,7 @@ const Project = ({ project, idx }) => {
       <div className="w-full h-full bg-white pb-10 mb:pb-0 project">
         <section className="section">
           <div className="relative w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
-            <div className="pt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
+            <div className="md:pt-20 pt-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
               {project.id === "monstera" ||
               project.id === "wren" ||
               idx % 2 === 0 ? (
@@ -36,24 +36,36 @@ const Project = ({ project, idx }) => {
                           {project.title}
                         </h1>
                       </div>
-                      <FadeInSection>
-                        <div className="font-body">
-                          <p>
-                            {project.description ||
-                              "Description not available."}
+
+                      <div className="font-body">
+                        <p>
+                          {project.description || "Description not available."}
+                        </p>
+                        {project.link && (
+                          <div className="lg:justify-start  justify-end flex">
+                            <p className="mt-4">
+                              <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block  bg-primary font-body "
+                              >
+                                View Project
+                              </a>
+                            </p>
+                          </div>
+                        )}
+                        {project.role && (
+                          <p className="mt-4">
+                            <strong>Role:</strong> {project.role}
                           </p>
-                          {project.role && (
-                            <p className="mt-4">
-                              <strong>Role:</strong> {project.role}
-                            </p>
-                          )}
-                          {project.status && (
-                            <p className="mt-4">
-                              <strong>Status:</strong> {project.status}
-                            </p>
-                          )}
-                        </div>
-                      </FadeInSection>
+                        )}
+                        {project.status && (
+                          <p className="mt-4">
+                            <strong>Status:</strong> {project.status}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </>
@@ -66,24 +78,22 @@ const Project = ({ project, idx }) => {
                           {project.title}
                         </h1>
                       </div>
-                      <FadeInSection>
-                        <div className="font-body">
-                          <p>
-                            {project.description ||
-                              "Description not available."}
+
+                      <div className="font-body">
+                        <p>
+                          {project.description || "Description not available."}
+                        </p>
+                        {project.role && (
+                          <p className="mt-4">
+                            <strong>Role:</strong> {project.role}
                           </p>
-                          {project.role && (
-                            <p className="mt-4">
-                              <strong>Role:</strong> {project.role}
-                            </p>
-                          )}
-                          {project.status && (
-                            <p className="mt-4">
-                              <strong>Status:</strong> {project.status}
-                            </p>
-                          )}
-                        </div>
-                      </FadeInSection>
+                        )}
+                        {project.status && (
+                          <p className="mt-4">
+                            <strong>Status:</strong> {project.status}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
                   <ModalTrigger id={modalId} className="order-1 lg:order-2">
