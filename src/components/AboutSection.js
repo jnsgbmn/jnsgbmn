@@ -188,7 +188,7 @@ const WorkExperience = () => {
               <p className="text-sm">— Recent, United Kingdom, UK</p>
             </div>
             <div className="mt-2">
-              <p>As Front End Developer </p>
+              <p>As front end Developer </p>
               <p>Working on React, Next.js, and Node.js</p>
             </div>
           </li>
